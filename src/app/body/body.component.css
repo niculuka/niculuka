@@ -1,0 +1,103 @@
+.body-content {    
+    width: 100%;
+    background: rgb(0, 0, 0);
+}
+
+.body {
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+    background-image: url("../../assets/images/coding70.png");      
+    background-size: 100%; 
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    width: 100%;    
+}
+
+.items h2 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.items h3 {
+    font-size: 36px;
+    margin: 100px 0 0 0;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    gap: 50px;
+    width: 100%;
+    /* border: 1px solid rgb(255, 255, 255);    */
+}
+
+.btn-main {
+    width: fit-content;
+    padding: 20px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    border: 2px solid #66FCF1;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    background: black;
+}
+
+.btn-main:hover,
+.btn-gh:hover {
+    transition: 0.5s;
+    color: #66FCF1;
+    border: 2px solid #53b5ae;
+}
+
+@media(max-width: 1030px) {
+    .items {
+        margin-top: 60px;
+    }
+
+    .body h2 {
+        font-size: 36px;
+    }
+
+    .body h3 {
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 768px) {
+    .items{
+        margin-top: 40px;
+    }
+
+    .body h2 {
+        font-size: 32px;
+    }
+
+    .body h3 {
+        font-size: 26px;
+    }
+
+    .btn-main{
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 550px) {
+    .btn-main {
+        width: 90%;
+    }
+
+    .body h2 {
+        font-size: 26px;
+    }
+}
