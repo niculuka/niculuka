@@ -10,6 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BodyComponent } from './body/body.component';
 import { BlockComponent } from './block/block.component';
+import { PolicyComponent } from './policy/policy.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { BlockComponent } from './block/block.component';
     HeaderComponent,
     FooterComponent,
     BodyComponent,
-    BlockComponent
+    BlockComponent,
+    PolicyComponent
   ],
   imports: [
     BrowserModule,

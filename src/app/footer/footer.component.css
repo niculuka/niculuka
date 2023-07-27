@@ -1,6 +1,6 @@
 .footer-content {
     width: 100%;
-    padding: 50px 0;
+    padding:  0;
     background: rgb(20, 20, 20);
 }
 
@@ -8,7 +8,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 20px;
-    gap: 20px;
     max-width: 1200px;
     margin: auto;
     box-sizing: border-box;
@@ -16,9 +15,39 @@
 }
 
 .column {
-    padding: 20px;
-    border: 2px solid #66fcf1;
+    padding: 10px;
     background: rgb(20, 20, 20);
+    /* border: 1px solid grey; */
+}
+
+.column h1 {
+    color: white;
+    margin: 0;
+    /* border: 1px solid grey; */
+}
+
+.column h3 {
+    display: block;
+    margin: 4px 0;
+    font-weight: 100;
+    /* color: rgb(222, 222, 222); */
+    /* border: 1px solid grey; */
+}
+
+.column h4 {
+    display: block;
+    margin: 4px 0;
+    font-weight: 100;
+    /* color: rgb(222, 222, 222); */
+    /* border: 1px solid grey; */
+}
+
+.divider {
+    display: block;
+    width: 50%;
+    height: 1px;
+    background: #66fcf1;
+    /* border: 1px solid rgb(255, 0, 0); */
 }
 
 .column span {
@@ -26,50 +55,62 @@
     flex-direction: row;
     align-items: center;
     gap: 10px;
+    margin: 0;
+    padding: 0;
+    color: rgb(222, 222, 222);
+    /* border: 1px solid rgb(255, 0, 0); */
 }
 
-.contact img {
+/* --------------------------------------- icons size */
+.pencil img {
     width: 14px;
 }
 
-.phone img {
-    width: 22px;
+.angular img {
+    width: 16px;
 }
 
-.mail img {
+.springboot img {
+    width: 16px;
+}
+
+.mysql img {
     width: 20px;
 }
 
-.column h1 {
-    color: white;
+.address img {
+    width: 12px;
+    /* border: 1px solid red; */
 }
 
-/* @media(max-width: 1030px) {}
-
-@media(max-width: 768px) {
-    .footer {
-        display: grid;
-        grid-template-columns: 1fr;  
-        width: 90%; 
-        margin: 40px auto;
-    }
-
-    img {
-        width: 50px;
-    }
+.phone img {
+    width: 20px;
+    /* border: 1px solid red; */
 }
+
+.email img {
+    width: 16px;
+    /* border: 1px solid red; */
+}
+
+.column span p {
+    margin: 10px 0;
+}
+
+.privacy {
+    cursor: pointer;
+}
+
+.privacy p:hover {
+    color: #66fcf1;;
+}
+
+@media(max-width: 1030px) {}
+
+@media(max-width: 768px) {}
 
 @media(max-width: 550px) {
     .footer {
-        margin: 30px auto;
-        padding: 0;
+        grid-template-columns: 1fr;
     }
-
-    img {
-        width: 40px;
-    }
-    
-    h1 {
-        font-size: 22px;
-    }
-} */
+}
