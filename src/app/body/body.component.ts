@@ -8,9 +8,9 @@ import { Router } from '@angular/router';
 })
 export class BodyComponent {
 
-  url_Weather = "https://weather.redporto.com";
-  url_ElectoRoroom = "https://electroroom.redporto.com/";
-  url_FoodStore = "https://foodstore.redporto.com";
+  url_Weather = "https://weather.myfrontstore.com";
+  url_ElectoRoom = "https://electroroom.myfrontstore.com/";
+  url_FoodStore = "https://foodstore.myfrontstore.com";
   url_GitHub = "https://github.com/niculuka";
 
   constructor(
@@ -22,7 +22,7 @@ export class BodyComponent {
   }
 
   goToElectoRoroom() {
-    window.open(this.url_ElectoRoroom, "_blank");
+    window.open(this.url_ElectoRoom, "_blank");
   }
 
   goToFoodStore() {

@@ -1,53 +1,39 @@
-.footer-content {
+.block-content {
     width: 100%;
-    padding: 50px 0;
-    background: rgb(20, 20, 20);
+    border-bottom: 1px solid rgb(91, 91, 91);
 }
 
-.footer {
+.block {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 20px;
     gap: 20px;
     max-width: 1200px;
-    margin: auto;
+    margin: 50px auto;
     box-sizing: border-box;
     color: #66fcf1;
 }
 
-.column {
+.angular,
+.spring,
+.mysql {
     padding: 20px;
     border: 2px solid #66fcf1;
     background: rgb(20, 20, 20);
 }
 
-.column span {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
+img {
+    width: 60px;
 }
 
-.contact img {
-    width: 14px;
-}
-
-.phone img {
-    width: 22px;
-}
-
-.mail img {
-    width: 20px;
-}
-
-.column h1 {
+h1 {
     color: white;
 }
 
-/* @media(max-width: 1030px) {}
+@media(max-width: 1030px) {}
 
 @media(max-width: 768px) {
-    .footer {
+    .block {
         display: grid;
         grid-template-columns: 1fr;  
         width: 90%; 
@@ -60,7 +46,7 @@
 }
 
 @media(max-width: 550px) {
-    .footer {
+    .block {
         margin: 30px auto;
         padding: 0;
     }
@@ -72,4 +58,4 @@
     h1 {
         font-size: 22px;
     }
-} */
+}
