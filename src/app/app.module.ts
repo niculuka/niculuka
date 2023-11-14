@@ -21,7 +21,7 @@ import { PolicyComponent } from './policy/policy.component';
     FooterComponent,
     BodyComponent,
     BlockComponent,
-    PolicyComponent
+    PolicyComponent,
   ],
   imports: [
     BrowserModule,
