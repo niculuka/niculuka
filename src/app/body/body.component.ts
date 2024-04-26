@@ -8,9 +8,9 @@ import { Router } from '@angular/router';
 })
 export class BodyComponent {
 
-  url_Weather = "https://weather.myfrontstore.com";
-  url_ElectoRoom = "https://electroroom.myfrontstore.com/";
-  url_FoodStore = "https://foodstore.myfrontstore.com";
+  url_Weather = "https://weather.niculuka.ro";
+  url_ElectoRoom = "https://electroroom.niculuka.ro/";
+  url_FoodStore = "https://foodstore.niculuka.ro";
   url_GitHub = "https://github.com/niculuka";
 
   constructor(
