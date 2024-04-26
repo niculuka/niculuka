@@ -28,7 +28,7 @@ import { PolicyComponent } from './policy/policy.component';
     AppRoutingModule
   ],
   providers: [
-    { provide: LocationStrategy, useClass: HashLocationStrategy }
+    // { provide: LocationStrategy, useClass: HashLocationStrategy }
   ],
   bootstrap: [AppComponent]
 })
