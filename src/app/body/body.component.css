@@ -55,9 +55,8 @@
 }
 
 .btn-main:hover {
-    transition: 0.5s;
-    color: #66FCF1;
-    border: 2px solid #53b5ae;
+    color: black;
+    background: #66FCF1;
 }
 
 @media(max-width: 1030px) {
