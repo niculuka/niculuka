@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class BodyComponent {
 
+  url_Funerar = "https://servicii-funerare-alexandru.ro";
   url_Weather = "https://weather.niculuka.ro";
   url_ElectoRoom = "https://electroroom.niculuka.ro/";
   url_FoodStore = "https://foodstore.niculuka.ro";
@@ -16,6 +17,10 @@ export class BodyComponent {
   constructor(
     private router: Router
   ) { }
+
+  goToFunerar() {
+    window.open(this.url_Funerar, "_blank");
+  }
 
   goToWeather() {
     window.open(this.url_Weather, "_blank");
