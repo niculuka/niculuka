@@ -6,16 +6,17 @@
 
             <h2>PORTFOLIO:</h2>
             <div class="buttons">
-                <button class="btn-main" (click)="goToFunerar()">FUNERAR ALEXANDRU</button>
-                <button class="btn-main" (click)="goToWeather()">WEATHER FORECAST</button>
-                <button class="btn-main" (click)="goToElectoRoroom()">ELECTRO ROOM</button>
-                <button class="btn-main" (click)="goToFoodStore()">FOOD STORE</button>
+                <li *ngFor="let href of portfolioHrefs">
+                    <a [href]="href.url" target="_blank">{{href.name}}</a>
+                </li>
             </div>
 
 
             <h3>GitHub:</h3>
             <div class="buttons">
-                <button class="btn-main" (click)="goToGitHub()">github.com/niculuka</button>
+                <li>
+                    <a [href]="developer.url" target="_blank">{{developer.name}}</a>
+                </li>
             </div>
 
         </div>

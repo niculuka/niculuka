@@ -1,21 +1,22 @@
 .footer-content {
     width: 100%;
-    padding:  0;
+    padding: 0;
     background: rgb(20, 20, 20);
 }
 
 .footer {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    padding: 20px;
+    padding: 0px;
     max-width: 1200px;
     margin: auto;
     box-sizing: border-box;
     color: #66fcf1;
+    /* border: 1px solid grey; */
 }
 
 .column {
-    padding: 10px;
+    padding: 14px;
     background: rgb(20, 20, 20);
     /* border: 1px solid grey; */
 }
@@ -70,6 +71,43 @@
     /* border: 1px solid rgb(255, 0, 0); */
 }
 
+.column a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 4px 0;
+    gap: 6px;
+    text-decoration: none;
+    /* border: 1px solid red; */
+}
+
+.column a p{
+    margin: 10px 0;
+    /* border: 1px solid red; */
+}
+
+.pencil,
+.angular,
+.springboot,
+.mysql,
+.address {
+    cursor: default;
+    color: white;
+}
+
+.phone,
+.email,
+.privacy {
+    cursor: pointer;
+    color: white;
+}
+
+.phone:hover,
+.email:hover,
+.privacy:hover {
+    color: #66fcf1;
+}
+
 /* --------------------------------------- icons size */
 .pencil img {
     width: 14px;
@@ -102,23 +140,9 @@
     /* border: 1px solid red; */
 }
 
-.column span p {
-    margin: 10px 0;
-}
-
-.privacy {
-    cursor: pointer;
-}
-
-.privacy p:hover {
-    color: #66fcf1;;
-}
-
 @media(max-width: 1030px) {}
 
-@media(max-width: 768px) {}
-
-@media(max-width: 550px) {
+@media(max-width: 768px) {
     .footer {
         grid-template-columns: auto;
     }
@@ -131,7 +155,17 @@
         font-size: 16px;
     }
 
-    .column p {
+    .column a {
         font-size: 14px;
+    }
+
+    .column a p{
+        margin: 6px 0;
+    }
+}
+
+@media(max-width: 400px) {
+    .column a {
+        font-size: 13px;
     }
 }

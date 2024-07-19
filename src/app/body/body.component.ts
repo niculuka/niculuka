@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+
+interface Site {
+  name: string;
+  url: string;
+}
 
 @Component({
   selector: 'app-body',
@@ -7,34 +11,35 @@ import { Router } from '@angular/router';
   styleUrls: ['./body.component.css']
 })
 export class BodyComponent {
+  portfolioHrefs: Site[] = [
+    {
+      name: "AUTOHAL",
+      url: "https://autohal.ro"
+    },
+    {
+      name: "FUNERAR ALEXANDRU",
+      url: "https://servicii-funerare-alexandru.ro"
+    },
+    {
+      name: "ELECTRO ROOM",
+      url: "https://electroroom.niculuka.ro"
+    },
+    {
+      name: "FOOD STORE",
+      url: "https://foodstore.niculuka.ro"
+    },
+    {
+      name: "WEATHER CAST",
+      url: "https://weather.niculuka.ro"
+    },
+    {
+      name: "NEUROPSY RASPOP",
+      url: "https://neuropsy-raspop.com/"
+    }
+  ];
 
-  url_Funerar = "https://servicii-funerare-alexandru.ro";
-  url_Weather = "https://weather.niculuka.ro";
-  url_ElectoRoom = "https://electroroom.niculuka.ro/";
-  url_FoodStore = "https://foodstore.niculuka.ro";
-  url_GitHub = "https://github.com/niculuka";
-
-  constructor(
-    private router: Router
-  ) { }
-
-  goToFunerar() {
-    window.open(this.url_Funerar, "_blank");
-  }
-
-  goToWeather() {
-    window.open(this.url_Weather, "_blank");
-  }
-
-  goToElectoRoroom() {
-    window.open(this.url_ElectoRoom, "_blank");
-  }
-
-  goToFoodStore() {
-    window.open(this.url_FoodStore, "_blank");
-  }
-
-  goToGitHub() {
-    window.open(this.url_GitHub, "_blank");
+  developer: Site = {
+    name: "niculuka",
+    url: "https://github.com/niculuka"
   }
 }
