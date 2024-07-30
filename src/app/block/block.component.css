@@ -1,9 +1,9 @@
-.block-content {
+.block-contentainer {
     width: 100%;
     border-bottom: 1px solid rgb(91, 91, 91);
 }
 
-.block {
+.block-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 14px;
@@ -14,9 +14,7 @@
     color: #66fcf1;
 }
 
-.angular,
-.spring,
-.mysql {
+.block {
     padding: 20px;
     border: 2px solid #66fcf1;
     background: rgb(20, 20, 20);
@@ -30,10 +28,8 @@ h1 {
     color: white;
 }
 
-@media(max-width: 1030px) {}
-
 @media(max-width: 768px) {
-    .block {
+    .block-content {
         gap: 10px;
         margin: 30px auto;
     }
@@ -48,16 +44,14 @@ h1 {
 }
 
 @media(max-width: 550px) {
-    .block {
+    .block-content {
         grid-template-columns: 1fr;
         width: 90%;
         margin: 30px auto;
         padding: 0;
     }
 
-    .angular,
-    .spring,
-    .mysql {
+    .block {
         padding: 10px;
     }
 

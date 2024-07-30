@@ -13,6 +13,10 @@ interface Site {
 export class BodyComponent {
   portfolioHrefs: Site[] = [
     {
+      name: "PUNCTUL CENTRAL",
+      url: "https://punctulcentral.ro"
+    },
+    {
       name: "AUTOHAL",
       url: "https://autohal.ro"
     },
@@ -23,11 +27,7 @@ export class BodyComponent {
     {
       name: "ELECTRO ROOM",
       url: "https://electroroom.niculuka.ro"
-    },
-    {
-      name: "FOOD STORE",
-      url: "https://foodstore.niculuka.ro"
-    },
+    },    
     {
       name: "WEATHER CAST",
       url: "https://weather.niculuka.ro"
@@ -39,7 +39,7 @@ export class BodyComponent {
   ];
 
   developer: Site = {
-    name: "niculuka",
+    name: "/niculuka",
     url: "https://github.com/niculuka"
   }
 }
