@@ -46,9 +46,9 @@ h1 {
 @media(max-width: 550px) {
     .block-content {
         grid-template-columns: 1fr;
-        width: 90%;
+        width: 100%;
         margin: 30px auto;
-        padding: 0;
+        padding: 0 14px;
     }
 
     .block {
