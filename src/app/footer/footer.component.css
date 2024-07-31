@@ -6,17 +6,17 @@
 
 .footer {
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    padding: 0px;
+    grid-template-columns: auto auto auto auto;    
     max-width: 1200px;
     margin: auto;
+    padding: 0px;
     box-sizing: border-box;
     color: #66fcf1;
     /* border: 1px solid grey; */
 }
 
 .column {
-    padding: 14px;
+    padding: 40px 14px;
     background: rgb(20, 20, 20);
     /* border: 1px solid grey; */
 }
@@ -38,9 +38,12 @@
 
 .column h3 {
     display: block;
+    width: fit-content;
     margin: 4px 0;
     font-weight: 100;
-    /* color: rgb(222, 222, 222); */
+    line-height: 30px;
+    /* color: rgb(222, 222, 222); */    
+    border-bottom: 1px solid #66fcf1;
     /* border: 1px solid grey; */
 }
 
@@ -50,14 +53,6 @@
     font-weight: 100;
     /* color: rgb(222, 222, 222); */
     /* border: 1px solid grey; */
-}
-
-.divider {
-    display: block;
-    width: 40%;
-    height: 1px;
-    background: #66fcf1;
-    /* border: 1px solid rgb(255, 0, 0); */
 }
 
 .column span {
@@ -81,7 +76,7 @@
     /* border: 1px solid red; */
 }
 
-.column a p{
+.column a p {
     margin: 10px 0;
     /* border: 1px solid red; */
 }
@@ -90,6 +85,8 @@
 .angular,
 .springboot,
 .mysql,
+.wordpress,
+.divi,
 .address {
     cursor: default;
     color: white;
@@ -114,22 +111,31 @@
 }
 
 .angular img {
-    width: 16px;
+    width: 18px;
 }
 
 .springboot img {
-    width: 16px;
+    width: 18px;
 }
 
 .mysql img {
+    width: 22px;
+}
+
+.wordpress img {
+    width: 20px;
+}
+
+.divi img {
     width: 20px;
 }
 
 .address img {
-    width: 12px;
+    width: 14px;
     /* border: 1px solid red; */
 }
 
+/* --------------------------------------- hoverable */
 .phone img {
     width: 20px;
     /* border: 1px solid red; */
@@ -140,11 +146,13 @@
     /* border: 1px solid red; */
 }
 
-@media(max-width: 1030px) {}
-
 @media(max-width: 768px) {
     .footer {
         grid-template-columns: auto;
+    }
+
+    .column {
+        padding: 20px 14px;
     }
 
     .main {
@@ -160,11 +168,11 @@
     }
 
     .column a p{
-        margin: 6px 0;
+        margin: 8px 0;
     }
 }
 
-@media(max-width: 400px) {
+@media(max-width: 550px) {
     .column a {
         font-size: 13px;
     }
